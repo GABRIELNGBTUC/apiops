@@ -7,7 +7,7 @@
         "ghcr.io/devcontainers/features/docker-in-docker:2": {
             "version": "latest",
             "enableNonRootDocker": true,
-            "moby": true
+            "moby": false
         }
     },
     "onCreateCommand": "curl -sSL https://aspire.dev/install.sh | bash",
