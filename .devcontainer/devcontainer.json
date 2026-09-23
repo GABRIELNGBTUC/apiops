@@ -1,11 +1,16 @@
 {
 	"name": "Dev container",
-	"image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+	"image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
 	"features": {
 		"./features/aspire": {},
 		"./features/azure": {},
 		"./features/dotnet": {},
 		"./features/github": {},
-		"./features/playwright": {}
+		"./features/playwright": {},
+		"ghcr.io/devcontainers/features/docker-in-docker:2": {
+			"version": "latest",
+			"enableNonRootDocker": true,
+			"moby": false
+		}
 	}
 }

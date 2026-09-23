@@ -3,12 +3,7 @@
     "version": "1.0.0",
     "name": "aspire",
     "dependsOn": {
-        "./features/dotnet": {},
-        "ghcr.io/devcontainers/features/docker-in-docker:2": {
-            "version": "latest",
-            "enableNonRootDocker": true,
-            "moby": false
-        }
+           "./features/dotnet": {}
     },
     "onCreateCommand": "curl -sSL https://aspire.dev/install.sh | bash",
     // "postStartCommand": "dotnet dev-certs https --trust",
